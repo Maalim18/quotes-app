@@ -1,1 +1,9 @@
-<p>quote-detail works!</p>
+<div class="votes">
+    <button (click)='upvote()'>Upvote</button>
+    <div>Up votes<br>{{quoty.upvote}}</div>
+    <button (click)='downvote()'>Downvote</button> 
+    <div id="downVote">Down Votes<br>{{quoty.downvote}}</div>
+    <button (click)='deleteQuote(true)'>Delete</button> 
+  </div>
+  <p >Author:{{quoty.author}}</p>
+  Posted
