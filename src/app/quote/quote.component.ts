@@ -8,11 +8,11 @@ import{Quote}from '../quote';
 })
 export class QuoteComponent implements OnInit {
   quotes: Quote[] = [
-    new Quote(1,'Mahatma Gandi', 'An eye for an eye only ends up making the whole world blind','Obama',20,10,new Date(2021,4,15)),
-     new Quote(2,'Nicho', 'be humble!','Obama',0,0,new Date(2021,4,15)),
-    new Quote(3,'Jackob', 'wake up!','Obama',0,0,new Date(2021,4,15)),
-     new Quote(4,'Maalim', 'you are good!','Obama',0,0,new Date(2021,4,15)),
-     new Quote(5,'Jeyson', 'hello therere!','Obama',0,0,new Date(2021,4,15))
+    new Quote(1,'Mahatma Gandi', 'When i despair ,i remember that all through history the way of truth and love have always won.There have been tyrants and murderers and for a time they can seem invicible but in the end ,they always fall,Think of it-always.','Ali Yunis',20,10,new Date(2021,4,15)),
+     new Quote(2,'martin Luter king jnr', 'The ultimate measure of a man is not where he stands in moments of comfort and convenience but where he stands at times of challenge and controversy!','John Mc Grath',0,0,new Date(2021,4,15)),
+    new Quote(3,'Bill Gates','The belief that the world is getting worse,that we cant solve extreme poverty and disease isnt just mistaken its harmful', 'Ali Mohamed',0,0,new Date(2021,4,15)),
+     new Quote(4,'Malcom X', 'Be respectful, be obedient ,obey the law,but if anyone puts his hands on you ,send him to the cemetry','sheriif Hamdani',0,0,new Date(2021,4,15)),
+     new Quote(5,'Mohamed Maalim', 'persue your dreams ruthlessly,simp no more,for the world doesnt need weak men!!','Solo chake',0,0,new Date(2021,4,15))
     
   ];
 
