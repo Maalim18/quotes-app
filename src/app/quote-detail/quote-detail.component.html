@@ -1,8 +1,8 @@
 <div class="votes">
-    <button (click)='like()'>like</button>
-    <div>Up votes<br>{{quoty.upvote}}</div>
-    <button (click)='dislike()'>dislike</button> 
-    <div id="downVote">Down Votes<br>{{quoty.downvote}}</div>
+    <button (click)='upvote()'>like</button>
+    <div>like<br>{{quoty.upvote}}</div>
+    <button (click)='downvote()'>Dislike</button> 
+    <div id="downVote">Dislike<br>{{quoty.downvote}}</div>
     <button (click)='deleteQuote(true)'>Delete</button> 
   </div>
   <p >Author:{{quoty.author}}</p>
