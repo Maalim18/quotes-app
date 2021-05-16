@@ -1,25 +1,16 @@
-<div class="container">
-    <h1>Quotes</h1>
-    <hr>
-  
-    <div class="row">
-      <div class="col-md-6">
-        <div *ngFor='let quote of quotes;let i = index'>
-          <div>
-            <h6 id={{i}} appStrikethrough>{{quote.name}} due on {{quote.completeDate|date|uppercase}}</h6>
-            <button (click)='toggleDetails(i)' class="btn btn-primary">Toggle Details</button>
-          </div>
-  
-          <div *ngIf='quote.showDescription'>
-            <app-quote-detail  [quote]='quote' (isComplete) = 'deleteQuote($event,i)'></app-quote-detail>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6">
-        <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
-   </div>
+<div class="row">
+    <div class="col-md-9 quote">
+      <div *ngFor="let quote of sortQuotes let i= index" class="quote-body"> 
+        <h4  appHighlightQoute>{{quote.description}}</h4>
+        <!-- <p class="quote-info">{{quote.quoteInfo}}</p> -->
+        <!-- <div class="votes">
+          <div></div>
+        </div> -->
+        <app-quote-detail *ngIf='quote' bind-quoty='quote' (isRead)='quoteDelete($event,i)'>
+        </app-quote-detail>
+          by {{quote.name}} 
       </div>
     </div>
-    <div>
-    <p *ngIf='quotes.length > 5'>You have too many quotes</p>
-  </div>
+    <div >
+      <app-quote-form (add)="addedQuote($event)"></app-quote-form>
+    </div>
