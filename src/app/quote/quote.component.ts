@@ -9,10 +9,10 @@ import{Quote}from '../quote';
 export class QuoteComponent implements OnInit {
   quotes: Quote[] = [
     new Quote(1,'Mahatma Gandi', 'An eye for an eye only ends up making the whole world blind','Obama',20,10,new Date(2021,4,15)),
-     new Quote(2,'Nicho', 'be humble!','Obama',20,10,new Date(2021,4,15)),
-    new Quote(3,'Jackob', 'wake up!','Obama',20,10,new Date(2021,4,15)),
-     new Quote(4,'Maalim', 'you are good!','Obama',20,10,new Date(2021,4,15)),
-     new Quote(5,'Jeyson', 'hello therere!','Obama',20,10,new Date(2021,4,15))
+     new Quote(2,'Nicho', 'be humble!','Obama',0,0,new Date(2021,4,15)),
+    new Quote(3,'Jackob', 'wake up!','Obama',0,0,new Date(2021,4,15)),
+     new Quote(4,'Maalim', 'you are good!','Obama',0,0,new Date(2021,4,15)),
+     new Quote(5,'Jeyson', 'hello therere!','Obama',0,0,new Date(2021,4,15))
     
   ];
 
