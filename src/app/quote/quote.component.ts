@@ -10,12 +10,12 @@ export class QuoteComponent implements OnInit {
 
  
     quotes: Quote[] = [
-      new Quote(1, 'Watch finding Nemo', 0,0,'Find an online version and watch merlin find his son',new Date(2019,9,14)),
-      new Quote(2,'Buy Cookies',0,0,'I have to buy cookies for the parrot',new Date(2019,6,9)),
-      new Quote(3,'Get new Phone Case',0,0,'Diana has her birthday coming up soon',new Date(2019,1,12)),
-      new Quote(4,'Get Dog Food',0,0,'Pupper likes expensive snacks',new Date(2019,11,18)),
-      new Quote(5,'Solve math homework',0,0,'Damn Math',new Date(2019,2,14)),
-      new Quote(6,'Plot my world domination plan',0,0,'Cause I am an evil overlord',new Date(2019,3,14)),
+      new Quote(1, 'Be humble in life', 0,0,'maalim',new Date(2019,9,14)),
+      new Quote(2,'persue your dreams ruthlessly',0,0,' quote posted by:jj kamotho',new Date(2019,6,9)),
+      new Quote(3,'be happy always',0,0,' quote posted by:allan mwangi',new Date(2019,1,12)),
+      new Quote(4,'never give up',0,0,' quote posted by:kelvin ochieng',new Date(2019,11,18)),
+      new Quote(5,'Stay wild,being normal is overrated',0,0,' quote posted by:abdi moha',new Date(2019,2,14)),
+      new Quote(6,'be optimistic in life',0,0,' quote posted :juma kuno',new Date(2019,3,14)),
     ];
   toggleDetails(index){
     this.quotes[index].showDescription = !this.quotes[index].showDescription;
