@@ -1,9 +1,5 @@
-<div class="votes">
-    <button (click)='upvote()'>Upvote</button>
-    <div>upvote<br>{{quoty.upvote}}</div>
-    <button (click)='downvote()'>Downvote</button> 
-    <div id="downVote">Downvote<br>{{quoty.downvote}}</div>
-    <button (click)='deleteQuote(true)'>Delete</button> 
-  </div>
-  <p >Author:{{quoty.author}}</p>
-  Posted: {{quoty.datePosted|datePipe}} days ago.
+<p>{{quote.description}}</p>
+<p>This quote will be complete in {{quote.completeDate|dateCount}} days</p>
+<button class="btn btn-md btn-success" id="hate" (click)='upvote()'>UPVOTE:{{quote.upvote}}</button>
+<button class="btn btn-md btn-danger"(click)='downvote()'>DOWNVOTE:{{quote.downvote}}</button>
+<button (click)= 'quoteDelete(true)' class="btn btn-outline-danger">Delete</button>
